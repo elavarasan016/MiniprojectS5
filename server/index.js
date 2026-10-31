@@ -595,7 +595,7 @@ app.use((err, req, res, next) => {
 });
 
 // ── Start Server ───────────────────────────────────────────────────────────
-if (!process.env.VERCEL && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
+if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`\n🚀 RecruiterLens AI Server active on http://localhost:${PORT}`);
     console.log(`   Module 1: GET  /api/dashboard`);
