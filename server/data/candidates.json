@@ -1,8 +1,8 @@
 [
   {
-    "id": "cand_1793424306270_1",
+    "id": "cand_1793425186564_1",
     "filename": "Aarav_Sharma_ML_Engineer.txt",
-    "uploadedAt": "2026-10-30T23:25:06.270Z",
+    "uploadedAt": "2026-10-30T23:39:46.564Z",
     "name": "AARAV SHARMA",
     "email": "aarav.sharma@techmail.com",
     "phone": "Not Provided",
@@ -166,9 +166,9 @@
     "rawText": "AARAV SHARMA\nEmail: aarav.sharma@techmail.com | Phone: +91 98765 43210\nLocation: Bengaluru, India | GitHub: https://github.com/aarav-sharma | LinkedIn: https://linkedin.com/in/aaravsharma-ml\n\nPROFESSIONAL SUMMARY\nResults-driven Machine Learning Engineer with 3+ years of experience designing and deploying scalable predictive models, NLP pipelines, and data systems. Proficient in Python, PyTorch, Scikit-Learn, and SQL. Built production microservices with FastAPI and Docker on AWS.\n\nTECHNICAL SKILLS\n- Programming Languages: Python, SQL, C++, Bash\n- ML & AI: Machine Learning, Deep Learning, NLP, PyTorch, Scikit-Learn, Pandas & NumPy, Model Deployment\n- Databases & Storage: PostgreSQL, Redis\n- Cloud & DevOps: AWS, Docker, Git, CI/CD, Linux\n- Frameworks & APIs: FastAPI, REST APIs\n\nEXPERIENCE\nMachine Learning Engineer | DataCore Labs (2022 - Present)\n- Architected an NLP text classification system processing 500k customer reviews daily using PyTorch and Transformer architectures, improving sentiment accuracy by 24%.\n- Developed end-to-end ML training pipelines with Scikit-Learn, Pandas, and PostgreSQL, cutting feature generation time by 40%.\n- Containerized inference services using Docker and deployed REST endpoints with FastAPI on AWS EC2, maintaining sub-80ms p95 latency.\n- Partnered with product teams to design A/B testing infrastructure evaluating predictive model performance.\n\nJunior AI Developer | Cognitive Analytics (2021 - 2022)\n- Built regression and classification models using Python, NumPy, and Scikit-Learn for churn prediction.\n- Automated SQL reporting queries against PostgreSQL database, reducing manual analysis overhead by 15 hours weekly.\n\nEDUCATION\nB.Tech in Computer Science and Engineering\nNational Institute of Technology (2017 - 2021) | CGPA: 8.8/10\n\nPROJECTS\n- Neural Semantic Search Engine: Built vector retrieval service combining PyTorch embeddings with PostgreSQL pgvector for document semantic search.\n- Real-time Fraud Detection Pipeline: Deployed streaming anomaly detection model with FastAPI and Docker handling 1,200 req/sec."
   },
   {
-    "id": "cand_1793424306272_2",
+    "id": "cand_1793425186565_2",
     "filename": "Priya_Patel_FullStack_React_Node.txt",
-    "uploadedAt": "2026-10-31T00:25:06.272Z",
+    "uploadedAt": "2026-10-31T00:39:46.565Z",
     "name": "PRIYA PATEL",
     "email": "priya.patel.dev@gmail.com",
     "phone": "Not Provided",
@@ -353,9 +353,9 @@
     "rawText": "PRIYA PATEL\nEmail: priya.patel.dev@gmail.com | Phone: +91 98234 56789\nLocation: Pune, India | GitHub: https://github.com/priyapatel-dev | LinkedIn: https://linkedin.com/in/priyapatel-fullstack\n\nPROFESSIONAL SUMMARY\nSenior Full Stack Developer with 4 years of hands-on experience building high-throughput web applications with React, Next.js, TypeScript, and Node.js. Passionate about performant user interfaces, responsive design, and robust RESTful APIs backed by MongoDB and PostgreSQL.\n\nCORE COMPETENCIES\n- Languages: TypeScript, JavaScript, HTML/CSS, SQL\n- Frontend: React, Next.js, Redux, Tailwind CSS, Responsive Design\n- Backend: Node.js, Express, REST APIs, GraphQL\n- Databases: PostgreSQL, MongoDB, Redis\n- Tools & Cloud: Git, Docker, AWS, Postman, Jira, CI/CD\n\nEXPERIENCE\nFull Stack Software Engineer | Nimbus Technologies (2022 - Present)\n- Led frontend architecture for enterprise SaaS analytics dashboard utilizing React, Next.js, and TypeScript, improving Core Web Vitals by 35%.\n- Implemented performant backend microservices with Node.js and Express handling 2M+ API calls daily with PostgreSQL and Redis caching.\n- Designed reusable UI component system in Tailwind CSS and Storybook, accelerating feature delivery by 28%.\n- Integrated automated CI/CD pipelines via GitHub Actions ensuring continuous deployment with zero downtime.\n\nFrontend Developer | PixelCraft Solutions (2020 - 2022)\n- Developed responsive client web apps using React, Redux, and modern JavaScript.\n- Collaborated with UI/UX designers in Figma to transform high-fidelity wireframes into accessible web interfaces.\n- Consumed REST APIs and implemented client-side state caching with Redux.\n\nEDUCATION\nBachelor of Engineering (B.E.) in Information Technology\nPune University (2016 - 2020)\n\nPROJECTS\n- DevPulse Collaborative Task Board: Real-time Kanban board built with React, Node.js, Express, and MongoDB.\n- E-Commerce Microservices Platform: Headless commerce store with Next.js, Tailwind CSS, and Stripe integration."
   },
   {
-    "id": "cand_1793424306272_3",
+    "id": "cand_1793425186566_3",
     "filename": "Rohan_Deshmukh_DevOps_SRE.txt",
-    "uploadedAt": "2026-10-31T01:25:06.272Z",
+    "uploadedAt": "2026-10-31T01:39:46.566Z",
     "name": "ROHAN DESHMUKH",
     "email": "rohan.deshmukh.sre@outlook.com",
     "phone": "Not Provided",
@@ -460,9 +460,9 @@
     "rawText": "ROHAN DESHMUKH\nEmail: rohan.deshmukh.sre@outlook.com | Phone: +91 91234 98765\nLocation: Hyderabad, India | GitHub: https://github.com/rohand-devops | LinkedIn: https://linkedin.com/in/rohandeshmukh-cloud\n\nSUMMARY\nCloud DevOps & Site Reliability Engineer with 5+ years of experience managing distributed cloud infrastructure across AWS and Azure. Deep expertise in Kubernetes, Docker, Terraform, CI/CD automation, and Linux system engineering.\n\nTECHNICAL SKILLS\n- Cloud Platforms: AWS, Microsoft Azure, Google Cloud (GCP)\n- Containers & Orchestration: Kubernetes, Docker\n- Infrastructure as Code (IaC): Terraform, Ansible\n- CI/CD & Automation: GitHub Actions, Jenkins, Git, Linux, Bash\n- Observability & Web Servers: Nginx, Prometheus, Grafana\n- Scripting & Backend: Python, Go, Shell Scripting\n\nEXPERIENCE\nLead DevOps Engineer | CloudScale Infra (2021 - Present)\n- Architected multi-region Kubernetes clusters on AWS EKS serving 15M monthly active users with 99.99% availability.\n- Automated 100% of cloud provisioning using Terraform, reducing environment stand-up time from 3 days to 25 minutes.\n- Built end-to-end CI/CD pipelines for 40+ microservices using GitHub Actions and Docker container scanning.\n- Designed proactive alerting and observability dashboards with Prometheus, Grafana, and Nginx reverse proxies.\n\nSystems Engineer | Enterprise Net Services (2019 - 2021)\n- Managed Linux server infrastructure across 200+ instances on AWS EC2.\n- Created Python and Bash automation scripts for backup verification and log rotation.\n\nEDUCATION\nB.Tech in Computer Engineering\nJNTU Hyderabad (2015 - 2019)\n\nCERTIFICATIONS\n- AWS Certified Solutions Architect - Associate\n- Certified Kubernetes Administrator (CKA)"
   },
   {
-    "id": "cand_1793424306273_4",
+    "id": "cand_1793425186566_4",
     "filename": "Ananya_Iyer_Data_Analyst.txt",
-    "uploadedAt": "2026-10-31T02:25:06.273Z",
+    "uploadedAt": "2026-10-31T02:39:46.566Z",
     "name": "ANANYA IYER",
     "email": "ananya.iyer.analytics@gmail.com",
     "phone": "Not Provided",
@@ -584,9 +584,9 @@
     "rawText": "ANANYA IYER\nEmail: ananya.iyer.analytics@gmail.com | Phone: +91 97654 32109\nLocation: Chennai, India | LinkedIn: https://linkedin.com/in/ananyaiyer-data\n\nSUMMARY\nDetail-oriented Data Analyst with 3 years of expertise turning raw data into strategic insights. Highly proficient in SQL, Python, Excel, Power BI / Tableau, and PostgreSQL. Experienced in statistical modeling, business intelligence, and ETL automation.\n\nTECHNICAL SKILLS\n- Languages & Tools: Python, SQL, Excel, Power BI / Tableau, Postman\n- Data & Analytics: Data Science, Pandas & NumPy, Matplotlib, Scikit-Learn\n- Databases: PostgreSQL, MySQL, SQLite\n- Collaboration: Jira, Git\n\nEXPERIENCE\nData Analyst | FinMetrics Global (2022 - Present)\n- Authored complex SQL queries against PostgreSQL data warehouse to track KPI metrics, churn rates, and revenue projections.\n- Built interactive executive dashboards in Power BI / Tableau used by C-suite stakeholders for weekly decision making.\n- Developed automated Python ETL pipelines using Pandas and NumPy to clean and aggregate 10GB+ financial transactions daily.\n- Created forecasting models using Scikit-Learn that improved quarterly sales forecast accuracy by 18%.\n\nJunior Business Analyst | Insights Consulting (2021 - 2022)\n- Analyzed consumer purchase behavior using advanced Excel formulas, pivot tables, and MySQL queries.\n- Prepared weekly slide decks and visualizations for retail client engagements.\n\nEDUCATION\nBachelor of Science (B.Sc) in Statistics & Computer Applications\nMadras Christian College (2018 - 2021) | Distinction"
   },
   {
-    "id": "cand_1793424306274_5",
+    "id": "cand_1793425186567_5",
     "filename": "Vikram_Sengupta_Java_Backend.txt",
-    "uploadedAt": "2026-10-31T03:25:06.274Z",
+    "uploadedAt": "2026-10-31T03:39:46.567Z",
     "name": "VIKRAM SENGUPTA",
     "email": "vikram.sengupta@enterprise.io",
     "phone": "Not Provided",
@@ -736,9 +736,9 @@
     "rawText": "VIKRAM SENGUPTA\nEmail: vikram.sengupta@enterprise.io | Phone: +91 93456 78901\nLocation: Kolkata, India | GitHub: https://github.com/vikrams-dev | LinkedIn: https://linkedin.com/in/vikram-sengupta-sde\n\nPROFESSIONAL SUMMARY\nSenior Java Backend Developer with 6 years of experience building resilient distributed microservices. Specialized in Java, Spring Boot, REST APIs, Kafka, MySQL, and Docker. Strong background in system design, database optimization, and cloud deployment.\n\nCORE SKILLS\n- Programming: Java, SQL, Go\n- Frameworks: Spring Boot, REST APIs, GraphQL\n- Distributed Systems: Kafka, RabbitMQ, Redis\n- Databases: MySQL, PostgreSQL, Oracle DB\n- Tools & Cloud: Docker, Kubernetes, AWS, Git, Jira, CI/CD\n\nEXPERIENCE\nSenior Backend Engineer | PayWave Core (2021 - Present)\n- Engineered transaction processing backend in Java and Spring Boot handling 8,000 TPS with zero data loss.\n- Decoupled synchronous monolithic architecture using Apache Kafka message streaming, reducing peak latency by 55%.\n- Optimized complex MySQL queries and indexing strategies, decreasing database CPU utilization by 30%.\n- Containerized backend services with Docker and deployed on AWS Kubernetes clusters.\n\nSoftware Developer | TCS Enterprise (2018 - 2021)\n- Developed RESTful web services in Spring Boot and Core Java for multinational banking client.\n- Integrated Oracle DB and MySQL persistence layers using Spring Data JPA.\n\nEDUCATION\nBachelor of Technology (B.Tech) in Information Technology\nHeritage Institute of Technology (2014 - 2018)"
   },
   {
-    "id": "cand_1793424306274_6",
+    "id": "cand_1793425186567_6",
     "filename": "Sneha_Mukherjee_AI_NLP_Researcher.txt",
-    "uploadedAt": "2026-10-31T04:25:06.274Z",
+    "uploadedAt": "2026-10-31T04:39:46.567Z",
     "name": "SNEHA MUKHERJEE",
     "email": "sneha.mukherjee.ai@gmail.com",
     "phone": "Not Provided",

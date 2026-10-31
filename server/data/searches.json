@@ -1,5 +1,15 @@
 [
   {
+    "id": "search_1793425256762",
+    "timestamp": "2026-10-31T05:40:56.762Z",
+    "query": "Python ML Engineer",
+    "mode": "combined",
+    "totalCandidates": 6,
+    "resultsCount": 6,
+    "topScore": 85,
+    "avgScore": 43
+  },
+  {
     "id": "search_1793419349808",
     "timestamp": "2026-10-31T04:02:29.808Z",
     "query": "Python developer with machine learning and SQL",
