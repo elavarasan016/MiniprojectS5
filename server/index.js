@@ -81,7 +81,83 @@ async function extractTextFromFile(file) {
   throw new Error("Unsupported file format");
 }
 
-// ── API ROUTES ─────────────────────────────────────────────────────────────
+// 0. API Landing & Directory
+app.get("/api", (req, res) => {
+  const meta = {
+    status: "online",
+    app: "RecruiterLens AI Backend API",
+    version: "1.0.0",
+    docs: "http://localhost:5173",
+    endpoints: {
+      health: "/api/health",
+      dashboard: "/api/dashboard",
+      candidates: "/api/candidates",
+      taxonomy: "/api/taxonomy",
+      search: "POST /api/search",
+      fragility: "POST /api/fragility",
+      gapAnalysis: "POST /api/gap-analysis",
+      counterfactual: "POST /api/counterfactual",
+      securityReports: "/api/security/reports",
+      securityScan: "POST /api/security/scan"
+    },
+    timestamp: new Date().toISOString()
+  };
+
+  if (req.accepts("html")) {
+    return res.send(`
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RecruiterLens AI — Backend API</title>
+        <style>
+          body { margin: 0; padding: 40px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #080A18; color: #F8FAFC; }
+          .card { max-width: 680px; margin: 0 auto; background: #0F132A; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+          .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 9999px; font-size: 13px; font-weight: 600; }
+          h1 { margin: 16px 0 8px; font-size: 26px; }
+          p { color: #94A3B8; font-size: 14px; line-height: 1.5; margin: 0 0 24px; }
+          .btn { display: inline-block; padding: 10px 18px; background: #6366F1; color: white; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 14px; margin-right: 12px; transition: background 0.2s; }
+          .btn:hover { background: #4F46E5; }
+          .btn-secondary { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); color: #CBD5E1; }
+          .btn-secondary:hover { background: rgba(255,255,255,0.12); }
+          .endpoints { margin-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; }
+          .endpoints h3 { font-size: 15px; margin-bottom: 12px; color: #E2E8F0; }
+          ul { list-style: none; padding: 0; margin: 0; }
+          li { padding: 8px 12px; margin-bottom: 6px; background: rgba(255,255,255,0.03); border-radius: 6px; font-family: monospace; font-size: 13px; display: flex; justify-content: space-between; }
+          li a { color: #818CF8; text-decoration: none; }
+          li a:hover { text-decoration: underline; }
+          .method { color: #38BDF8; font-weight: bold; }
+        </style>
+      </head>
+      <body>
+        <div class="card">
+          <div class="badge">● Backend API Online</div>
+          <h1>RecruiterLens AI Engine</h1>
+          <p>The Express backend REST API is running and ready on port 5000. Use the web dashboard on port 5173 to interact with the full system.</p>
+          <div>
+            <a class="btn" href="http://localhost:5173" target="_blank">🌐 Open Web Application (Port 5173)</a>
+            <a class="btn btn-secondary" href="/api/health">⚡ Health Check</a>
+            <a class="btn btn-secondary" href="/api/dashboard">📊 Telemetry</a>
+          </div>
+          <div class="endpoints">
+            <h3>Registered API Endpoints:</h3>
+            <ul>
+              <li><span><span class="method">GET</span> <a href="/api/health">/api/health</a></span> <span>System status</span></li>
+              <li><span><span class="method">GET</span> <a href="/api/dashboard">/api/dashboard</a></span> <span>Recruiter statistics</span></li>
+              <li><span><span class="method">GET</span> <a href="/api/candidates">/api/candidates</a></span> <span>Candidate pool list</span></li>
+              <li><span><span class="method">GET</span> <a href="/api/taxonomy">/api/taxonomy</a></span> <span>Skills & Presets</span></li>
+              <li><span><span class="method">GET</span> <a href="/api/security/reports">/api/security/reports</a></span> <span>ResumeGuard audit reports</span></li>
+            </ul>
+          </div>
+        </div>
+      </body>
+      </html>
+    `);
+  }
+
+  res.json(meta);
+});
 
 // 1. Health check & Meta
 app.get("/api/health", (req, res) => {
@@ -490,6 +566,20 @@ app.get("/api/security/benchmarks", (req, res) => {
   res.json({ success: true, count: benchmarks.length, benchmarks });
 });
 
+// ── Serve Production Frontend (Vite build) ─────────────────────────────────
+const distPath = path.join(__dirname, "../dist");
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api")) return next();
+    res.sendFile(path.join(distPath, "index.html"));
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.redirect("/api");
+  });
+}
+
 // ── Error Handling Middleware ──────────────────────────────────────────────
 app.use((err, req, res, next) => {
   if (err instanceof multer.MulterError) {
@@ -505,7 +595,7 @@ app.use((err, req, res, next) => {
 });
 
 // ── Start Server ───────────────────────────────────────────────────────────
-if (process.env.NODE_ENV !== "production" || !process.env.VERCEL) {
+if (!process.env.VERCEL && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
   app.listen(PORT, () => {
     console.log(`\n🚀 RecruiterLens AI Server active on http://localhost:${PORT}`);
     console.log(`   Module 1: GET  /api/dashboard`);

@@ -1,5 +1,65 @@
 [
   {
+    "id": "search_1793419349808",
+    "timestamp": "2026-10-31T04:02:29.808Z",
+    "query": "Python developer with machine learning and SQL",
+    "mode": "combined",
+    "totalCandidates": 6,
+    "resultsCount": 6,
+    "topScore": 89,
+    "avgScore": 48
+  },
+  {
+    "id": "search_1793419349775",
+    "timestamp": "2026-10-31T04:02:29.775Z",
+    "query": "Python developer with machine learning and SQL",
+    "mode": "combined",
+    "totalCandidates": 6,
+    "resultsCount": 6,
+    "topScore": 89,
+    "avgScore": 48
+  },
+  {
+    "id": "search_1793419019593",
+    "timestamp": "2026-10-31T03:56:59.593Z",
+    "query": "Python developer with machine learning and SQL",
+    "mode": "combined",
+    "totalCandidates": 6,
+    "resultsCount": 6,
+    "topScore": 89,
+    "avgScore": 48
+  },
+  {
+    "id": "search_1793419019564",
+    "timestamp": "2026-10-31T03:56:59.564Z",
+    "query": "Python developer with machine learning and SQL",
+    "mode": "combined",
+    "totalCandidates": 6,
+    "resultsCount": 6,
+    "topScore": 89,
+    "avgScore": 48
+  },
+  {
+    "id": "search_1792674745073",
+    "timestamp": "2026-10-22T13:12:25.073Z",
+    "query": "Python developer with machine learning and SQL",
+    "mode": "combined",
+    "totalCandidates": 6,
+    "resultsCount": 6,
+    "topScore": 89,
+    "avgScore": 48
+  },
+  {
+    "id": "search_1792674745063",
+    "timestamp": "2026-10-22T13:12:25.063Z",
+    "query": "Python developer with machine learning and SQL",
+    "mode": "combined",
+    "totalCandidates": 6,
+    "resultsCount": 6,
+    "topScore": 89,
+    "avgScore": 48
+  },
+  {
     "id": "search_1792054917177",
     "timestamp": "2026-10-15T09:01:57.177Z",
     "query": "Python developer with machine learning and SQL",
